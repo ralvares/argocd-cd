@@ -4,8 +4,6 @@ metadata:
   name: website-ingress
   labels:
     app: argocdrocks
-  annotations:
-    kubernetes.io/ingress.class: "traefik"
 spec:
   rules:
   - host: argocdrocks.vcap.me
