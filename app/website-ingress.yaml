@@ -8,7 +8,8 @@ metadata:
     kubernetes.io/ingress.class: "traefik"
 spec:
   rules:
-  - http:
+  - host: pipelines.vcap.me
+    http:
       paths:
       - path: /
         backend:
