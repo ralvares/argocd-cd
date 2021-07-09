@@ -11,9 +11,10 @@ spec:
   - host: argocdrocks.vcap.me
     http:
       paths:
-      - path: /
-        backend:
+      - backend:
           service:
             name: website-service
             port:
               number: 80
+        path: /
+        pathType: Prefix
