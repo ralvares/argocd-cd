@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: argocdrocks-nginy
-        image: docker.io/ralvares/spring-music@sha256:c7ba4daba5f5df052037f82a244f131c6bb4aa75467ef9a4bd19db8eef6d175d
+        image: ralvares/spring-petclinic:latest
         ports:
         - containerPort: 8080
         volumeMounts:
