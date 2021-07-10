@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,9 +17,9 @@ spec:
     spec:
       containers:
       - name: argocdrocks-nginy
-        image: nginx:alpine
+        image: docker.io/ralvares/spring-music@sha256:c7ba4daba5f5df052037f82a244f131c6bb4aa75467ef9a4bd19db8eef6d175d
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         volumeMounts:
         - name: website-cm-volume
           mountPath: /usr/share/nginx/html
@@ -26,3 +27,4 @@ spec:
       - name: website-cm-volume 
         configMap:
           name: website-cm
+
