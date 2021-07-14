@@ -4,19 +4,19 @@ kind: Deployment
 metadata:
   name: website-deployment
   labels:
-    app: argocdrocks
+    app: spring-music
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: argocdrocks
+      app: spring-music
   template:
     metadata:
       labels:
-        app: argocdrocks
+        app: spring-music
     spec:
       containers:
-      - name: argocdrocks-nginy
+      - name: spring-music
         image: docker.io/ralvares/spring-music@sha256:1691a9aac0eb33629303df84fb07323fcba726f2589df3db731bc57c5564c969
         ports:
         - containerPort: 8080
