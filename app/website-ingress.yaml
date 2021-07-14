@@ -3,10 +3,10 @@ kind: Ingress
 metadata:
   name: website-ingress
   labels:
-    app: argocdrocks
+    app: spring-music
 spec:
   rules:
-  - host: argocdrocks.vcap.me
+  - host: spring-music.vcap.me
     http:
       paths:
       - backend:
