@@ -7,5 +7,5 @@ resources:
 - website-ingress.yaml
 - website-svc.yaml
 images:
-- digest: sha256:13c697b55c990dfdea7800b0a8c44ce14a9372e600c89aaad5e8609a3c9e8df4
+- digest: sha256:a377d75a589d6733bc209ca6a4dff1561d5e95eefa51928e2a12e2bea4e34129
   name: docker.io/ralvares/spring-music
